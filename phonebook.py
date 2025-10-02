@@ -18,7 +18,7 @@ def initial_phonebook():
          temp.append(str(input("Enter Name: ")))
          if temp [j] == '' or temp [j] == ' ':
             sys.exit(
-                     "Sorry bro...but name is a mandat field. It's a formality to - Process exiting due to blank field..." )
+                     "Sorry bro...but name is a mandat field. It's a kinda formality to - Process exiting due to blank field...(Sorry bruh :-( )" )
         
         if j == 1:
            temp.append(int(input("Enter Number: ")))
@@ -78,3 +78,64 @@ def add_contact(pb):
          dip.append(str(input("Which category: (Family/Friends/VIP/Work/Others)  ")))
    pb.append(dip)
    return pb
+
+
+def remove_existing(pb):
+
+   query = str(input("Plz enter da name of da enemy dat u wont to remove"))
+   temp = 0
+   for i in range(len(pb)):
+      if query == pb[i][0]:
+         temp += 1
+         print(pb.pop(i))
+         print("Dat no. has bn removed.")
+         return pb
+   if temp == 0:
+      print("Ughhh. bruh you've gotta be kiddin' me...\nStop wasting my time and enter something proper will ya'!")
+      return pb
+   
+def delete_all(pb):
+   return pb.clear
+
+def search_existing(pb):
+   choice = int(input("Please enter da following criteria. \n Name- \n Contact No- \n E-mail Adress- \n DOB(dd/mm/yyyy)- \n Category: (Family/Friend/Work/VIP/Others)-"))
+   temp = []
+   check = -1
+   if choice == 1:
+      query = str(input("Plz enter bro's name -"))
+
+      for i in range(len(pb)):
+         if query == pb[i][0]:
+            check = i
+            temp.append(pb[i])
+   elif choice == 2:
+      query = str(input("Plz enter bro's no. -"))
+
+      for i in range(len(pb)):
+         if query == pb[i][1]:
+            check = i
+            temp.append(pb[i])
+   elif choice == 3:
+      query = str(input("Plz enter bro's e-amil. -"))
+
+      for i in range(len(pb)):
+         if query == pb[i][2]:
+            check = i
+            temp.append(pb[i])
+   elif choice == 4:
+      query = str(input("Plz enter bro's DOB.(dd/mm/yyyy) - "))
+
+      for i in range(len(pb)):
+         if query == pb[i][3]:
+            check = i
+            temp.append(pb[i])
+   elif choice == 5:
+      query = str(input("Plz enter bro's no. category (Family/Friend/Work/VIP/Others) -"))
+
+      for i in range(len(pb)):
+         if query == pb[i][4]:
+            check = i
+            temp.append(pb[i])
+   else:
+      print("invalid code criteria")
+      return -1
