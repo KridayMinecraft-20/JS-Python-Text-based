@@ -1,13 +1,4 @@
-Codingal is on a mission to inspire school kids to fall in love with coding.
-
-Coding helps develop logical thinking and problem-solving skills.
-
-Coding jobs are the future.
-
-They already constitute more than 60% of all the jobs in Science, Technology, Engineering, and Math.
-
-While still in school, those who start young will be ahead of everyone by the time they get into college.
-
-They will be creators of the future.
-
-Do you want to join us too?
+File in: 'Write Mode' -Hola, soy un pingüino. Tengo un año(s). Sorry he is spanish.... Here is an English Translation: 
+Hello, I am penguin. I am one year(s) old. 
+File in: 'Append Mode' -Hola, soy un pingüino. Tengo un año(s). Sorry he is spanish.... Here is an English Translation: 
+Hello, I am penguin. I am one year(s) old.
