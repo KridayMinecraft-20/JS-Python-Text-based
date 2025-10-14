@@ -1,0 +1,2 @@
+Hello Grade 4!
+We are learning Python!
